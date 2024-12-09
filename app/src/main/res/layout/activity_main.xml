@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Поле для введення елегазового вимикача -->
+        <EditText
+            android:id="@+id/inputBreakerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Тип вимикача (110 кВ)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Поле для введення довжини лінії -->
+        <EditText
+            android:id="@+id/inputLineLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Довжина лінії (км)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Поле для введення типу трансформатора -->
+        <EditText
+            android:id="@+id/inputTransformerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Тип трансформатора (110/10 кВ)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Поле для введення типу ввідного вимикача -->
+        <EditText
+            android:id="@+id/inputIncomingBreaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ввідний вимикач (10 кВ)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Поле для кількості приєднань -->
+        <EditText
+            android:id="@+id/inputConnections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Кількість приєднань (6)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Чекбокс для вибору одноколової системи -->
+        <CheckBox
+            android:id="@+id/checkboxSingleCircuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Одноколова система"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Кнопка для обчислення -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обчислити"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Поле для відображення результату -->
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат буде тут"
+            android:textSize="16sp"
+            android:padding="8dp" />
+        <Button
+            android:id="@+id/btnToLossCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="До розрахунку збитків"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
